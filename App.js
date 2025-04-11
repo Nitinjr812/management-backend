@@ -147,3 +147,9 @@ app.post("/edit", async (req, res) => {
 app.listen(8080, () => {
     console.log("Server Started At 8080")
 })
+
+app.get("/",(req,res)=>{
+    res.json({
+        status:true
+    })
+})
