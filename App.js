@@ -8,11 +8,10 @@ const Students = require("./models/Student")
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-mongoose.connect("mongodb://localhost:27017/management").then((res) => {
+mongoose.connect("mongodb+srv://nitin:Oio3pg0yQy4UQR8W@cluster0.lgmyvk0.mongodb.net/management").then((res) => {
     console.log("Mongoose Connected")
 }).catch((err) => {
     console.log(err)
-
 })
 
 
