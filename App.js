@@ -23,7 +23,7 @@ app.post("/teacher", async (req, res) => {
 
 
 
-    
+
     let a = teacher({
         name: users.name,
         email: users.email,
@@ -36,13 +36,15 @@ app.post("/teacher", async (req, res) => {
             status: true,
             msg: "Successfully Created",
             users: result
-        })``
+        })
     }
     else {
         res.json({
             status: false,
             msg: "Failed To Create",
         })
+
+        
     }
 
 })
